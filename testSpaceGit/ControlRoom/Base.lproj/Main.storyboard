@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testSpaceGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Academy Spaceship" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIp-YZ-Rva">
+                                <rect key="frame" x="16" y="89" width="358" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Here is the control room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPB-bA-Lg6">
+                                <rect key="frame" x="21" y="366" width="348" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRH-vK-RII">
+                                <rect key="frame" x="21" y="441" width="65" height="62.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Engine">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToEngine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ck6-Fu-Ih8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MR-Hc-qlz">
+                                <rect key="frame" x="21" y="500" width="74" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Cockpit">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToCockpit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Axw-I4-rM3"/>
+                                    <action selector="navigateToEngine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7o-3r-5cu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X94-Kz-kGi">
+                                <rect key="frame" x="21" y="548" width="41" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Fuel">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToEngine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kv5-Hs-Jmu"/>
+                                    <action selector="navigateToFuel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="are-d5-Kxo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptt-Rd-jbL">
+                                <rect key="frame" x="21" y="595" width="87" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Electrical">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToElectrical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQP-hu-wht"/>
+                                    <action selector="navigateToEngine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4i-gD-hOq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIr-9L-LCy">
+                                <rect key="frame" x="21" y="144" width="348" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's directly have access to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXS-to-Ufh">
+                                <rect key="frame" x="21" y="410" width="213.66666666666666" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lPB-bA-Lg6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="366" id="0b1-bR-YNw"/>
+                            <constraint firstItem="X94-Kz-kGi" firstAttribute="leading" secondItem="qRH-vK-RII" secondAttribute="leading" id="1bo-ro-QgU"/>
+                            <constraint firstItem="JIp-YZ-Rva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="B7D-2W-WA8"/>
+                            <constraint firstAttribute="bottom" secondItem="X94-Kz-kGi" secondAttribute="bottom" constant="257" id="DOk-QA-ncY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ptt-Rd-jbL" secondAttribute="trailing" symbolic="YES" id="GeW-55-UBy"/>
+                            <constraint firstItem="lPB-bA-Lg6" firstAttribute="centerX" secondItem="JIp-YZ-Rva" secondAttribute="centerX" id="Gn9-rp-4HK"/>
+                            <constraint firstItem="X94-Kz-kGi" firstAttribute="top" secondItem="8MR-Hc-qlz" secondAttribute="bottom" constant="9" id="K5j-tE-vPn"/>
+                            <constraint firstItem="lPB-bA-Lg6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LUV-Ec-qjH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qRH-vK-RII" secondAttribute="trailing" symbolic="YES" id="Ugy-qO-eof"/>
+                            <constraint firstItem="ptt-Rd-jbL" firstAttribute="top" secondItem="X94-Kz-kGi" secondAttribute="bottom" constant="8" id="VmC-qr-kcV"/>
+                            <constraint firstItem="zXS-to-Ufh" firstAttribute="top" secondItem="lPB-bA-Lg6" secondAttribute="bottom" constant="8" id="XHJ-hW-x3J"/>
+                            <constraint firstItem="zXS-to-Ufh" firstAttribute="leading" secondItem="qRH-vK-RII" secondAttribute="leading" id="d1a-ol-Suz"/>
+                            <constraint firstItem="qRH-vK-RII" firstAttribute="top" secondItem="zXS-to-Ufh" secondAttribute="bottom" constant="11.666666666666686" id="gZy-0j-8BI"/>
+                            <constraint firstItem="8MR-Hc-qlz" firstAttribute="top" secondItem="qRH-vK-RII" secondAttribute="bottom" constant="-3.6666666666666856" id="iHn-Tq-u5M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8MR-Hc-qlz" secondAttribute="trailing" symbolic="YES" id="m7z-o4-QWZ"/>
+                            <constraint firstItem="X94-Kz-kGi" firstAttribute="leading" secondItem="ptt-Rd-jbL" secondAttribute="leading" id="meB-ca-vzX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X94-Kz-kGi" secondAttribute="trailing" symbolic="YES" id="ozD-X8-uTc"/>
+                            <constraint firstItem="JIp-YZ-Rva" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q6h-gU-3ON"/>
+                            <constraint firstItem="zXS-to-Ufh" firstAttribute="trailing" secondItem="lPB-bA-Lg6" secondAttribute="trailing" constant="-134.5" id="qUs-g8-9tH"/>
+                            <constraint firstItem="X94-Kz-kGi" firstAttribute="leading" secondItem="8MR-Hc-qlz" secondAttribute="leading" id="wJL-3t-h7B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="haramberizqi" destination="IIr-9L-LCy" id="VD5-TE-J2j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="93.127962085308056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
